@@ -1,0 +1,87 @@
+﻿  Validating sources
+  Copying sources remotely to '192.34.59.172'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  ElasticsearchDatabase.cpp
+  ImageAssembler.cpp
+  ImageDatabase.cpp
+  Packet.cpp
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(10,27): warning : conversion from ‘std::vector<unsigned char>::size_type’ {aka ‘long unsigned int’} to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(10,27): warning :    bytes_written(bytes.size())
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(10,27): warning :                  ~~~~~~~~~~^~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(134,27): warning : comparison of integer expressions of different signedness: ‘std::vector<unsigned char>::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(134,27): warning :    if (raw_data.capacity() < size + bytes_written)
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(134,27): warning :        ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(136,11): warning : conversion from ‘long int’ to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(136,11): warning :     expand(size);
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(136,11): warning :            ^~~~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(140,17): warning : conversion from ‘long int’ to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(140,17): warning :    bytes_written += size;
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(140,17): warning :    ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(188,14): warning : conversion from ‘long int’ to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(188,14): warning :    bytes_read += size;
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(188,14): warning :    ~~~~~~~~~~~^~~~~~~
+  RockBlockProtocol.cpp
+  Source.cpp
+  TelemetryConfig.cpp
+  TelemetryData.cpp
+  TelemetryHandler.cpp
+  Linking objects
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : In function `__static_initialization_and_destruction_0(int, int)':
+/usr/include/boost/system/error_code.hpp(206): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(208): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(210): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : In function `boost::system::error_code::error_code()':
+/usr/include/boost/system/error_code.hpp(439): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : In function `boost::system::errc::make_error_code(boost::system::errc::errc_t)':
+/usr/include/boost/system/error_code.hpp(612): error : undefined reference to `boost::system::generic_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : In function `boost::system::error_category::std_category::equivalent(int, std::error_condition const&) const':
+/usr/include/boost/system/error_code.hpp(656): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(659): error : undefined reference to `boost::system::generic_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : In function `boost::system::error_category::std_category::equivalent(std::error_code const&, int) const':
+/usr/include/boost/system/error_code.hpp(686): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(689): error : undefined reference to `boost::system::generic_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : /usr/include/boost/system/error_code.hpp:701: more undefined references to `boost::system::generic_category()' follow
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ElasticsearchDatabase.o : error : In function `boost::asio::error::get_system_category()':
+/usr/include/boost/asio/error.hpp(230): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `__static_initialization_and_destruction_0(int, int)':
+/usr/include/boost/system/error_code.hpp(206): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(208): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(210): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::operator/(boost::filesystem::path const&, boost::filesystem::path const&)':
+/usr/include/boost/filesystem/path.hpp(792): error : undefined reference to `boost::filesystem::path::operator/=(boost::filesystem::path const&)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::exists(boost::filesystem::path const&)':
+/usr/include/boost/filesystem/operations.hpp(446): error : undefined reference to `boost::filesystem::detail::status(boost::filesystem::path const&, boost::system::error_code*)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::create_directory(boost::filesystem::path const&)':
+/usr/include/boost/filesystem/operations.hpp(572): error : undefined reference to `boost::filesystem::detail::create_directory(boost::filesystem::path const&, boost::system::error_code*)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::last_write_time(boost::filesystem::path const&)':
+/usr/include/boost/filesystem/operations.hpp(637): error : undefined reference to `boost::filesystem::detail::last_write_time(boost::filesystem::path const&, boost::system::error_code*)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::detail::dir_itr_imp::~dir_itr_imp()':
+/usr/include/boost/filesystem/operations.hpp(872): error : undefined reference to `boost::filesystem::detail::dir_itr_close(void*&, void*&)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::directory_iterator::directory_iterator(boost::filesystem::path const&)':
+/usr/include/boost/filesystem/operations.hpp(903): error : undefined reference to `boost::filesystem::detail::directory_iterator_construct(boost::filesystem::directory_iterator&, boost::filesystem::path const&, boost::system::error_code*)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\ImageDatabase.o : error : In function `boost::filesystem::directory_iterator::increment()':
+/usr/include/boost/filesystem/operations.hpp(939): error : undefined reference to `boost::filesystem::detail::directory_iterator_increment(boost::filesystem::directory_iterator&, boost::system::error_code*)'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\RockBlockProtocol.o : error : In function `__static_initialization_and_destruction_0(int, int)':
+/usr/include/boost/system/error_code.hpp(206): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(208): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(210): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\RockBlockProtocol.o : error : In function `unsigned short boost::date_time::month_str_to_ushort<boost::gregorian::greg_month>(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+/usr/include/boost/date_time/date_parsing.hpp(67): error : undefined reference to `boost::gregorian::greg_month::get_month_map_ptr[abi:cxx11]()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\Source.o : error : In function `__static_initialization_and_destruction_0(int, int)':
+/usr/include/boost/system/error_code.hpp(206): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(208): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(210): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\TelemetryConfig.o : error : In function `__static_initialization_and_destruction_0(int, int)':
+/usr/include/boost/system/error_code.hpp(206): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(208): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(210): error : undefined reference to `boost::system::system_category()'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\TelemetryData.o : error : In function `boost::date_time::month_formatter<boost::gregorian::greg_month, boost::date_time::simple_format<char>, char>::format_month(boost::gregorian::greg_month const&, std::ostream&)':
+/usr/include/boost/date_time/date_formatting.hpp(44): error : undefined reference to `boost::gregorian::greg_month::as_short_string() const'
+/usr/include/boost/date_time/date_formatting.hpp(49): error : undefined reference to `boost::gregorian::greg_month::as_long_string() const'
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\obj\x64\Debug\TelemetryHandler.o : error : In function `__static_initialization_and_destruction_0(int, int)':
+/usr/include/boost/system/error_code.hpp(206): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(208): error : undefined reference to `boost::system::generic_category()'
+/usr/include/boost/system/error_code.hpp(210): error : undefined reference to `boost::system::system_category()'
+collect2 : error : ld returned 1 exit status

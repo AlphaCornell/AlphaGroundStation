@@ -1,0 +1,31 @@
+﻿  Validating sources
+  Copying sources remotely to '192.34.59.172'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  ElasticsearchDatabase.cpp
+  ImageAssembler.cpp
+  ImageDatabase.cpp
+  Packet.cpp
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(10,27): warning : conversion from ‘std::vector<unsigned char>::size_type’ {aka ‘long unsigned int’} to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(10,27): warning :    bytes_written(bytes.size())
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(10,27): warning :                  ~~~~~~~~~~^~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(134,27): warning : comparison of integer expressions of different signedness: ‘std::vector<unsigned char>::size_type’ {aka ‘long unsigned int’} and ‘long int’ [-Wsign-compare]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(134,27): warning :    if (raw_data.capacity() < size + bytes_written)
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(134,27): warning :        ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(136,11): warning : conversion from ‘long int’ to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(136,11): warning :     expand(size);
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(136,11): warning :            ^~~~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(140,17): warning : conversion from ‘long int’ to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(140,17): warning :    bytes_written += size;
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(140,17): warning :    ~~~~~~~~~~~~~~^~~~~~~
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(188,14): warning : conversion from ‘long int’ to ‘uint32_t’ {aka ‘unsigned int’} may change value [-Wconversion]
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(188,14): warning :    bytes_read += size;
+C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\Packet.cpp(188,14): warning :    ~~~~~~~~~~~^~~~~~~
+  RockBlockProtocol.cpp
+  Source.cpp
+  TelemetryConfig.cpp
+  TelemetryData.cpp
+  TelemetryHandler.cpp
+  Linking objects
+  AlphaCubesat.vcxproj -> C:\Users\Max\source\repos\AlphaCubesat\AlphaCubesat\bin\x64\Release\AlphaCubesat.out

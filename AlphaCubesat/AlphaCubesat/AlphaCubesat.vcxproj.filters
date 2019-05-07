@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Databases">
+      <UniqueIdentifier>{6ae36580-7cdf-4b76-8bdc-7360decf2201}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Telemetry">
+      <UniqueIdentifier>{04182d19-a0ef-499d-88fd-64bb0742d486}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Telemetry\Protocol">
+      <UniqueIdentifier>{fae74c91-7edc-44c6-a11b-a66024b8663e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{b51eebcf-d2e8-4a78-9fd7-d699c658aff6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source.cpp" />
+    <ClCompile Include="ImageAssembler.cpp">
+      <Filter>Telemetry\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="Packet.cpp">
+      <Filter>Telemetry\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="ElasticsearchDatabase.cpp">
+      <Filter>Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageDatabase.cpp">
+      <Filter>Databases</Filter>
+    </ClCompile>
+    <ClCompile Include="TelemetryConfig.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="TelemetryHandler.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+    <ClCompile Include="RockBlockProtocol.cpp">
+      <Filter>Telemetry\Protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="TelemetryData.cpp">
+      <Filter>Telemetry</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ImageAssembler.h">
+      <Filter>Telemetry\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="Packet.h">
+      <Filter>Telemetry\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="ElasticsearchDatabase.h">
+      <Filter>Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageDatabase.h">
+      <Filter>Databases</Filter>
+    </ClInclude>
+    <ClInclude Include="TelemetryConfig.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="TelemetryHandler.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="Binutil.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RockBlockProtocol.h">
+      <Filter>Telemetry\Protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="TelemetryData.h">
+      <Filter>Telemetry</Filter>
+    </ClInclude>
+    <ClInclude Include="doc.hpp">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
